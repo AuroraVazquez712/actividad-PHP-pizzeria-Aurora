@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/favicon.ico" />
+        <title>PizzaPlaneta</title>
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div class="nav-left">
+                <img src="img/banderas/mx.png" alt="País" class="flag-icon">
+                <h1>PizzaPlaneta</h1>
+            </div>
+            <div class="nav-right">
+                <div class="profile-section">
+                    <img src="img/perfil_default.jpg" alt="Perfil" class="profile-pic">
+                    <a href="perfil.php" class="btn-editar">EditarPerfil</a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container">
+            <div class="form-header">
+                <h2>Elige tu país</h2>
+            </div>
+            <form action="armaTuPizza.php" method="GET">
+                <div class="contenedor-paises">
+                    <div class="opt-bandera">
+                        <input id="ipt-bandera-mx" type="radio" name="pais" value="mx" checked>
+                        <label for="ipt-bandera-mx"><img class="img-bandera" src="img/banderas/mx.png" alt="México"></label>
+                    </div>
+                    <div class="opt-bandera">
+                        <input id="ipt-bandera-it" type="radio" name="pais" value="it">
+                        <label for="ipt-bandera-it"><img class="img-bandera" src="img/banderas/it.png" alt="Italia"></label>
+                    </div>
+                    <div class="opt-bandera">
+                        <input id="ipt-bandera-fr" type="radio" name="pais" value="fr">
+                        <label for="ipt-bandera-fr"><img class="img-bandera" src="img/banderas/fr.png" alt="Francia"></label>
+                    </div>
+                    <div class="opt-bandera">
+                        <input id="ipt-bandera-ar" type="radio" name="pais" value="ar">
+                        <label for="ipt-bandera-ar"><img class="img-bandera" src="img/banderas/ar.png" alt="Argentina"></label>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn-submit">Entrar</button>
+            </form>
+        </main>
+    </body>
+</html>
